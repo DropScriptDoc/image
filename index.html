@@ -62,7 +62,7 @@
 
             const data = new Uint8Array(e.target.result);
             for (let i = 0; i < data.length; ++i) {
-                string += (i < data.length - 1) ? `\n\t0x${data[i].toString(16)},` : `\n\t0x${data[i].toString(16)}`;
+                string += (i < data.length - 1) ? `\n    0x${data[i].toString(16)},` : `\n    0x${data[i].toString(16)}`;
             }
 
             string += "\n};";
